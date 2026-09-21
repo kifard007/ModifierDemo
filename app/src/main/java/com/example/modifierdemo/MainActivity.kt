@@ -42,6 +42,10 @@ class MainActivity : ComponentActivity() {
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold
         )
+        CustomImage(
+            image = R.drawable.vacation,
+            modifier = Modifier.padding(16.dp)
+        )
     }
     @Preview(showBackground = true)
     @Composable
