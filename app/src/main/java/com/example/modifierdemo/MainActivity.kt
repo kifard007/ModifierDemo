@@ -51,10 +51,11 @@ class MainActivity : ComponentActivity() {
         }
     }
     @Composable
-    fun CustomImage(image: Int) {
+    fun CustomImage(image: Int, modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(image),
-            contentDescription = null
+            contentDescription = null,
+            modifier = modifier
         )
     }
 }
